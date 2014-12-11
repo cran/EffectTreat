@@ -1,0 +1,3 @@
+Version 0.1_1:
+	o Functions: PCA.ContCont, GoodPreTreatContCont, CausalPCA.ContCont, Predict.Treat.ContCont, Predict.Treat.T0T1.ContCont
+
