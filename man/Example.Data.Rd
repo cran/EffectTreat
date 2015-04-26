@@ -5,7 +5,7 @@
 An example dataset
 }
 \description{
-ExampleData is a hypothetical dataset constructed to demonstrate some of the functions in the package.}
+Example.Data is a hypothetical dataset constructed to demonstrate some of the functions in the package.}
 \usage{data(Example.Data)}
 \format{
 A \code{data.frame} with \eqn{181} observations on \eqn{4} variables.
