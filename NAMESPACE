@@ -1,13 +1,22 @@
 
 exportPattern("^[[:alpha:]]+")
 
+import(methods)
+import(stats)
+import(graphics)
+import(grDevices)
+
 
 S3method(plot, GoodPretreatContCont)
 S3method(plot, PCA.ContCont)
 S3method(plot, Predict.Treat.ContCont)
 S3method(plot, Predict.Treat.T0T1.ContCont)
+S3method(plot, Multivar.PCA.ContCont)
+S3method(plot, Predict.Treat.Multivar.ContCont)
 
 S3method(summary, GoodPretreatContCont)
 S3method(summary, PCA.ContCont)
 S3method(summary, Predict.Treat.ContCont)
 S3method(summary, Predict.Treat.T0T1.ContCont)
+S3method(summary, Multivar.PCA.ContCont)
+S3method(summary, Predict.Treat.Multivar.ContCont)

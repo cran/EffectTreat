@@ -37,7 +37,7 @@ Wim Van der Elst, Ariel Alonso, & Geert Molenberghs
 # sigma_T0T0 = sigma_T1T1 = 8 and Delta = 1
 MinPred <- GoodPretreatContCont(T0T0 = 8, T1T1 = 8, Delta = 1)
 summary(MinPred)
-\donttest{plot(MinPred)}
+plot(MinPred)
 }
 \keyword{Plausibility of a good pretreatment predictor}
 \keyword{Continuous-continuous setting}

@@ -1,5 +1,7 @@
 CausalPCA.ContCont <- function(x, Min=-1, Max=1, Cex.Letters=3, Cex.Corrs=2, Lines.Rel.Width=TRUE, Col.Pos.Neg=TRUE) {
-  
+
+if (is(x, "PCA.ContCont")==TRUE){  
+
 dat <- cbind(x$Pos.Def, x$PCA)
 colnames(dat) <- c("T0T1", "T0S", "T1S", "PCA")
 sub <- dat[dat$PCA >= Min & dat$PCA <= Max,] 
@@ -53,6 +55,12 @@ text(9.6, 5, med_T0T1, cex=Cex.Corrs)
   segments(x0=9, y0=8, x1=9, y1=2, lwd=1, col=col_T0T1)
   }
 
+}
+  
+
+if (is(x, "Multivar.PCA.ContCont")==TRUE){  
+  stop("x should be fitted object of class PCA.ContCont")
+ }
 }  
   
 

@@ -14,7 +14,7 @@ Predict.Treat.ContCont(x, S, Beta, SS, mu_S)
   \item{S}{The observed pretreatment value \eqn{S_j} for a patient.}
   \item{Beta}{The estimated treatment effect on the true endpoint (in the validation sample).}
   \item{SS}{The estimated variance of the pretreatment predictor endpoint.}
-  \item{mu_S}{The estimated mean of the surrogate endpoint (in the validation sample).}
+  \item{mu_S}{The estimated mean of the pretreatment predictor (in the validation sample).}
 }
 \value{An object of class \code{PCA.Predict.Treat.ContCont} with components,
 \item{Pred_T}{The predicted \eqn{\Delta T_j}.}
@@ -49,7 +49,6 @@ summary(Predict)
 
 # plot Delta_T_j given S_T, for the mean value of the valid rho_T0T1  
 plot(Predict, Mean.T0T1=TRUE, Median.T0T1=FALSE)
-
 }
 \keyword{Causal-Inference framework}
 \keyword{Continuous-continuous setting}

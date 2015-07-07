@@ -37,11 +37,11 @@ MinPred <- GoodPretreatContCont(T0T0 = 100, T1T1 = 120, Delta = 50,
 T0T1 = seq(0, 1, by = 0.01))
 
 # Plot the results (use percentages on Y-axis)
-\donttest{plot(MinPred, Type="Percent")}
+plot(MinPred, Type="Percent")
 
 # Same plot, but add the percentages of ICA values that are equal to or 
 # larger than the midpoint values of the bins
-\donttest{plot(MinPred, Labels=TRUE)}
+plot(MinPred, Labels=TRUE)
 }
 
 \keyword{Plausibility of a good pretreatment predictor}

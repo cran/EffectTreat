@@ -2,7 +2,7 @@
 \alias{PCA.ContCont}
 \title{Compute the predictive causal association (PCA) in the Continuous-continuous case}
 \description{
-The function \code{PCA.ContCont} compute the predictive causal association (PCA) when \eqn{S}=pretreatment predictor and \eqn{T}=True endpoint are continuous normally distributed endpoints. See \bold{Details} below.}
+The function \code{PCA.ContCont} computes the predictive causal association (PCA) when \eqn{S}=pretreatment predictor and \eqn{T}=True endpoint are continuous normally distributed endpoints. See \bold{Details} below.}
 \usage{PCA.ContCont(T0S, T1S, T0T0=1, T1T1=1, SS=1, T0T1=seq(-1, 1, by=.01))}
 \arguments{
   \item{T0S}{A scalar or vector that specifies the correlation(s) between the pretreatment predictor and the true endpoint in the control treatment condition that should be considered in the computation of \eqn{\rho_{\psi}}.}
@@ -15,7 +15,7 @@ The function \code{PCA.ContCont} compute the predictive causal association (PCA)
 \details{
 Based on the causal-inference framework, it is assumed that each subject \emph{j} has two counterfactuals (or potential outcomes), i.e., \eqn{T_{0j}} and \eqn{T_{1j}} (the counterfactuals for the true endpoint (\eqn{T}) under the control (\eqn{Z=0}) and the experimental (\eqn{Z=1}) treatments of subject \emph{j}, respectively). The individual causal effects of \eqn{Z} on \eqn{T} for a given subject \emph{j} is then defined as \eqn{\Delta_{T_{j}}=T_{1j}-T_{0j}}.
 
-Surrogacy can be quantified as the correlation between the individual causal effect of \eqn{Z} on \eqn{T} and \eqn{S_{j}} (the pretreatment predictor) (for details, see Alonso et al., submitted):
+The correlation between the individual causal effect of \eqn{Z} on \eqn{T} and \eqn{S_{j}} (the pretreatment predictor) equals (for details, see Alonso et al., submitted):
 
 \deqn{\rho_{\psi}=\frac{\sqrt{\sigma_{T1T1}}\rho_{T1S}-\sqrt{\sigma_{T0T0}}\rho_{T0S}}{\sqrt{\sigma_{T0T0}+\sigma_{T1T1}-2\sqrt{\sigma_{T0T0}\sigma_{T1T1}}}\rho_{T0T1}},}
 
@@ -41,7 +41,6 @@ Alonso, A., Van der Elst, W., & Molenberghs, G. (submitted). Validating predicto
 Wim Van der Elst, Ariel Alonso, & Geert Molenberghs
 }
 \examples{
-
 # Based on the example dataset
     # load data in memory
 data(Example.Data)
@@ -66,7 +65,8 @@ PCA <- PCA.ContCont(T0S=.77, T1S=.71, T0T0=263.99, T1T1=230.65,
 
 # Examine and plot the vector of generated PCA values:
 summary(PCA)
-\donttest{plot(PCA)}
+plot(PCA)
+
 
 # Other example
 
@@ -79,7 +79,7 @@ T0T1=seq(-1, 1, by=.01))
 
 # Examine and plot the vector of generated PCA values:
 summary(PCA)
-\donttest{plot(PCA)}
+plot(PCA)
 
 # Obtain the positive definite matrices than can be formed as based on the 
 # specified (vectors) of the correlations (these matrices are used to 
@@ -91,3 +91,4 @@ PCA$Pos.Def
 \keyword{Sensitivity}
 \keyword{PCA}
 \keyword{Continuous-continuous setting}
+\keyword{Univariate setting}

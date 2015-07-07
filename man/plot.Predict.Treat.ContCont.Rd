@@ -1,6 +1,7 @@
 \name{plot.Predict.Treat.ContCont}
 \alias{plot Predict.Treat.ContCont}
 \alias{plot.Predict.Treat.ContCont}
+\alias{plot.Predict.Treat.Multivar.ContCont}
 \title{
 Plots the distribution of the individual causal effect based on \eqn{S}. 
 }
@@ -10,9 +11,11 @@ Plots the distribution of \eqn{\Delta T_j}|\eqn{S_j} and the \eqn{1-\alpha}\% CI
 \usage{
 \method{plot}{Predict.Treat.ContCont}(x, Xlab, Main, Mean.T0T1=FALSE, Median.T0T1=TRUE,  
 Specific.T0T1="none", alpha=0.05, Cex.Legend=1, \dots)
+\method{plot}{Predict.Treat.Multivar.ContCont}(x, Xlab, Main, Mean.T0T1=FALSE, Median.T0T1=TRUE,  
+Specific.T0T1="none", alpha=0.05, Cex.Legend=1, \dots)
 }
 \arguments{
-  \item{x}{An object of class \code{Predict.Treat.ContCont}. See \code{\link{Predict.Treat.ContCont}}.}
+  \item{x}{An object of class \code{Predict.Treat.ContCont} or \code{Predict.Treat.Multivar.ContCont}. See \code{\link{Predict.Treat.ContCont}} or \code{\link{Predict.Treat.Multivar.ContCont}}.}
   \item{Xlab}{The legend of the X-axis of the plot. Default "\eqn{\Delta T_j}|\eqn{S_j}".}
   \item{Main}{The title of the PCA plot. Default " ".}  
   \item{Mean.T0T1}{Logical. When \code{Mean.T0T1=TRUE}, the \eqn{1-\alpha}\% CI for the mean \eqn{\rho_{T0T1}} value (i.e., the mean of all valid \eqn{\rho_{T0T1}} values in \code{x}) is shown. Default \code{FALSE}.}  
