@@ -6,7 +6,6 @@ import(stats)
 import(graphics)
 import(grDevices)
 
-
 S3method(plot, GoodPretreatContCont)
 S3method(plot, PCA.ContCont)
 S3method(plot, Predict.Treat.ContCont)
