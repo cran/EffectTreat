@@ -1,6 +1,6 @@
-15ac4197744a6c59f07d04516d5264df *DESCRIPTION
+e512248fe23b55b45574c27fe07716d5 *DESCRIPTION
 c79769da545a0038d57a7aef8e6babbd *NAMESPACE
-2356d80fe00454fb62c78d5bfc4e3bb8 *NEWS
+5c9e1dd60b9f8bb56b9f2ffe27cb791b *NEWS
 99bd3efcc41ce31dac34800de33d4f8a *R/CausalPCA.ContCont.R
 e5aed94af80e788ba714bbf2979addbd *R/GoodPretreatContCont.R
 a7dbed2e3ea8937f07315d7574aa21c1 *R/Min.Max.Multivar.PCA.R
@@ -23,7 +23,7 @@ f2617db7dcacdc0e17b48ef082a52bdf *R/summary.Predict.Treat.T0T1.ContCont.R
 ace90a7b52b343f7e93f0fddbc9945fe *man/CausalPCA.ContCont.Rd
 9787217e3d9ba74090cd4824b2faef19 *man/Example.Data.Rd
 fb693e9d173a4027e3cb6276ff9e1657 *man/GoodPretreatContCont.Rd
-07c034c87d1fcbd00ae53b187fabf298 *man/Min.Max.Multivar.PCA.Rd
+88ba70c3c98f15e433644e85cc094e88 *man/Min.Max.Multivar.PCA.Rd
 cb2deee97ca22d452f988fe9f88f7085 *man/Min.R2.delta.Rd
 a3424848905084d1ce7af7e3aa51572b *man/Multivar.PCAContCont.Rd
 6cfead7d83afd443f225beae6109e40d *man/PCAContCont.Rd

@@ -31,6 +31,7 @@ Sigma_T1T1 <- 96.386
 Min.Max.Multivar.PCA(gamma=gamma, Sigma_SS=Sigma_SS, 
 Sigma_T0T0=Sigma_T0T0, Sigma_T1T1=Sigma_T1T1)
 }
-\keyword{min, max PCA}
+\keyword{min PCA}
+\keyword{min PCA}
 \keyword{Continuous-continuous setting}
 \keyword{Multivariate setting}
