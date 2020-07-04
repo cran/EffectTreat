@@ -10,8 +10,8 @@ This function provides a plot that displays the frequencies, percentages, or cum
 \usage{
 \method{plot}{PCA.ContCont}(x, Xlab.PCA, Main.PCA, Type="Percent", 
 Labels=FALSE, PCA=TRUE, Good.Pretreat=FALSE, EffectT0T1=FALSE, 
-Main.Good.Pretreat, Par=par(oma=c(0, 0, 0, 0), mar=c(5.1, 4.1, 4.1, 2.1)), 
-col, \dots)
+R2_psi_g=FALSE, Main.Good.Pretreat, Par=par(oma=c(0, 0, 0, 0), 
+mar=c(5.1, 4.1, 4.1, 2.1)), col, \dots)
 }
 \arguments{
   \item{x}{An object of class \code{PCA.ContCont} or \code{Multivar.PCA.ContCont}. See \code{\link{PCA.ContCont}} and \code{\link{Multivar.PCA.ContCont}}.}
@@ -21,7 +21,8 @@ col, \dots)
  \item{Labels}{Logical. When \code{Labels=TRUE}, the percentage of \eqn{\rho_{\psi}}, \eqn{R^2_{\psi}} and/or \eqn{\delta} values that are equal to or larger than the midpoint value of each of the bins are displayed (on top of each bin). Default \code{FALSE}.}  
 \item{PCA}{Logical. When \code{PCA=TRUE}, a plot of the PCA is provided. Default \code{TRUE}.}
 \item{Good.Pretreat}{Logical. When \code{Good.Pretreat=TRUE}, a plot of \eqn{\delta} is provided. This plot is useful in the context of examinating the plausibility of finding a good pretretment predictor endpoint. For details, see Alonso et al. (submitted). Can only be requested for fitted objects of class object of class \code{PCA.ContCont}. Default \code{FALSE}.}
-\item{EffectT0T1}{Logical. When \code{EffectT0T1=TRUE}, a plot depicting the relation between  \eqn{\rho[T0T1]} and PCA is provided. Default \code{FALSE}.}
+\item{EffectT0T1}{Logical. When \code{EffectT0T1=TRUE}, a plot depicting the relation between \eqn{\rho[T0T1]} and PCA is provided. Default \code{FALSE}.}
+\item{R2_psi_g}{Logical. When \code{R2_psi_g=TRUE}, a plot depicting the relation between \eqn{\rho[T0T1]} and  \eqn{R^2_{\psi g}} is provided. Default \code{FALSE}.}
 \item{Main.Good.Pretreat}{The title of the plot of \eqn{\delta}. For details, see Alonso et al. (submitted).}
   \item{Par}{Graphical parameters for the plot. Default \code{par(oma=c(0, 0, 0, 0), mar=c(5.1, 4.1, 4.1, 2.1))}.}
   \item{col}{The color of the bins. Default \code{col <- c(8)}.}

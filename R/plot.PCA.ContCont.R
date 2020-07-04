@@ -1,6 +1,6 @@
 plot.PCA.ContCont <- plot.Multivar.PCA.ContCont <- function(x, Xlab.PCA, Main.PCA, Type="Percent", 
                               Labels=FALSE, PCA=TRUE, 
-                              Good.Pretreat=FALSE, EffectT0T1=FALSE, Main.Good.Pretreat, 
+                              Good.Pretreat=FALSE, EffectT0T1=FALSE, R2_psi_g=FALSE, Main.Good.Pretreat, 
                               Par=par(oma=c(0, 0, 0, 0), mar=c(5.1, 4.1, 4.1, 2.1)), col, ...){   
 
   Object <- x 
@@ -178,6 +178,17 @@ plot.PCA.ContCont <- plot.Multivar.PCA.ContCont <- function(x, Xlab.PCA, Main.PC
                ylab="PCA", col=0, ...)
           lines(Object$T0T1, Object$PCA)
       }
+      
+      
+      if (R2_psi_g==TRUE){
+        par(mar=c(5.1, 5.1, 4.1, 2.1))
+        plot(Object$T0T1, Object$R2_psi_g$R2_psi_g, xlab=expression(rho[T0T1]), 
+             ylab=expression(R[psi*g]^2), col=0, ...)
+        lines(Object$T0T1, Object$R2_psi_g$R2_psi_g)
+        par(mar=c(5.1, 4.1, 4.1, 2.1))
+      }
+      
+      
     }
   
 }
